@@ -2,6 +2,7 @@
   "name": "instagram-clone",
   "version": "1.0.0",
   "description": "A full-stack Instagram clone built with React and Node.js",
+  "main": "api/index.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
@@ -10,9 +11,9 @@
     "start:backend": "cd backend && npm start",
     "start:frontend": "cd frontend && npm run dev",
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "build": "cd frontend && npm install && npm run build"
+    "build": "cd frontend && npm install && npm run build && cp -r dist/* .."
   },
-  "keywords": ["instagram", "clone", "react", "nodejs", "social-media"],
+  "keywords": ["instagram", "clone", "react", "nodejs", "social-media", "vercel"],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -21,5 +22,8 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
