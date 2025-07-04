@@ -85,19 +85,26 @@ VITE_API_URL=http://localhost:5000/api
 
 ### 5. Start the Application
 
-#### Start Backend Server
+#### For Local Development:
 \`\`\`bash
 cd backend
 npm run dev
 \`\`\`
 The backend will run on http://localhost:5000
 
-#### Start Frontend Development Server
 \`\`\`bash
 cd frontend
 npm run dev
 \`\`\`
 The frontend will run on http://localhost:5173
+
+#### For Vercel Deployment:
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed Vercel deployment instructions.
+
+**Quick Deploy:**
+1. Push to GitHub
+2. Connect to Vercel
+3. Deploy automatically!
 
 ## 📁 Project Structure
 
@@ -173,7 +180,23 @@ instagram-clone/
 4. **Follow Users** - Visit profiles and follow other users
 5. **Explore** - Browse the feed to see posts from all users
 
-## 🚦 Features in Development
+## � Deployment
+
+### Vercel Deployment
+This app is **ready for Vercel deployment** with:
+- ✅ Serverless API functions in `/api` directory
+- ✅ Automatic React build configuration
+- ✅ CORS and routing configured
+- ✅ Environment variables set up
+
+**Deploy Steps:**
+1. Push code to GitHub
+2. Import to Vercel
+3. Deploy automatically!
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
+## �🚦 Features in Development
 
 - [ ] Stories functionality
 - [ ] Direct messaging
